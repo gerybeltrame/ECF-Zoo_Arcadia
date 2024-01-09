@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-01-09T08:51:38.120Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" etag="7EUrjrWVYwaKsOzeoRDA" version="22.1.17" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-09T09:32:31.568Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0" etag="4r6aVb0dTYVs7k9OUO75" version="22.1.17" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="794" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -114,7 +114,7 @@
         <mxCell id="hVYQf4SrXX4T2gI8fLEp-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#fa6800;strokeColor=#C73500;" edge="1" parent="1" source="hVYQf4SrXX4T2gI8fLEp-16" target="hVYQf4SrXX4T2gI8fLEp-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hVYQf4SrXX4T2gI8fLEp-16" value="Employé" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+        <mxCell id="hVYQf4SrXX4T2gI8fLEp-16" value="&lt;font color=&quot;#ffffff&quot;&gt;Employé&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
           <mxGeometry x="140" y="460" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hVYQf4SrXX4T2gI8fLEp-17" value="Connexion" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
