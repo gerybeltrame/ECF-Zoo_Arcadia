@@ -11972,7 +11972,7 @@ html {
 }
 
 main {
-  margin-bottom: 200px;
+  margin-bottom: 210px;
 }
 
 footer.footer {
@@ -11985,6 +11985,7 @@ footer.footer {
 p {
   font-family: "Hind Madurai", sans-serif;
   font-size: 18px;
+  text-align: justify;
 }
 
 .hero-scene-content {
@@ -11999,9 +12000,14 @@ p {
   align-items: center;
   flex-direction: column;
   color: white;
+  margin-bottom: 15px;
 }
 
 .hero-scene-content p h1, .hero-scene-content p .h1 {
   font-size: 1.5rem;
   text-align: center;
+}
+
+.form-label {
+  color: #87C36B;
 }/*# sourceMappingURL=main.css.map */
