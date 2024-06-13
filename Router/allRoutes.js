@@ -10,6 +10,9 @@ export const allRoutes = [
     new Route("/Page_admin", "Page administration", "/Pages/Page_admin.html", ["admin"]),
     new Route("/Page_vétérinaire", "Page vétérinaire", "/Pages/Page_vétérinaire.html", ["vétérinaire"]),
     new Route("/Page_employé", "Page employé", "/Pages/Page_employé.html", ["employé"]),
+    new Route("/Animaux_savane", "Animaux_savane", "/Pages/Animaux_savane.html", []),
+    new Route("/Animaux_jungle", "Animaux_jungle", "/Pages/Animaux_jungle.html", []),
+    new Route("/Animaux_marais", "Animaux_marais", "/Pages/Animaux_marais.html", []),
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
