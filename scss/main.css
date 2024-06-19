@@ -11972,7 +11972,14 @@ html {
 }
 
 main {
-  margin-bottom: 210px;
+  margin-bottom: 150px;
+}
+
+#commentaire {
+  margin-bottom: 15px;
+  padding: 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 footer.footer {
