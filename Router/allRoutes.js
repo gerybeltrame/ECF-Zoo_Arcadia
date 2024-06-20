@@ -1,6 +1,6 @@
 import Route from "./Route.js";
 
-//Définir ici vos routes
+//Définir ici nos routes
 export const allRoutes = [
     new Route("/", "Accueil", "/Pages/home.html", [], "/js/auth/commentaires.js"),
     new Route("/Services", "Services", "/Pages/Services.html", []),

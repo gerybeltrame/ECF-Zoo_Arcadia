@@ -10,12 +10,19 @@ main{
     margin-bottom: 150px;
 }
 
-#commentaire {
+#connexion {
+    padding: 70px;
+}
+
+#sectioncommentaire {
     margin-bottom: 15px;
     padding: 70px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 
+}
+
+#commentaire {
+    overflow-x: scroll;
 }
 
 footer.footer {
@@ -23,6 +30,10 @@ footer.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+#email {
+    word-break: break-all;
 }
 
 p{
