@@ -1,6 +1,95 @@
 <div class="hero-scene">
     <div class="hero-scene-content">
-       <p>Bienvenue sur le site du zoo</p>
-       <h1>Arcadia</h1>
+       <h1>Administration</h1>
     </div>
 </div>
+<div id="inscription" class="container">
+    <form>
+        <div class="dropdown mb-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Rôles des utilisateurs
+            </button>
+            <ul class="dropdown-menu">
+              <li><a id="roleemployé" class="dropdown-item">Employé</a></li>
+              <li><a id="roleveterinaire" class="dropdown-item">Vétérinaire</a></li>
+            </ul>
+        </div>
+        <div class="mb-3">
+          <label for="EmailInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email">
+          <div class="invalid-feedback">
+             Veuillez saisir une adresse email valide
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="PasswordInput" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="PasswordInput" placeholder="Mot de passe" name="Password">
+           <div class="invalid-feedback">
+             Veuillez saisir un mot de passe valide
+           </div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btnSignin">Inscrire</button>
+        </div>
+    </form>
+</div>
+<article id="zonerapportveterinaire" class="bg-black text-white">
+    <div class="container p-4">
+        <h2 class="text-center text-primary">Avis clients</h2>
+        <div class="row d-flex justify-content-center">
+         <div class="col-md-8 col-lg-6">
+           <div id="rapportveterinaire" class="card shadow-0 border" style="background-color: black;">
+             <div class="card-body p-4">
+               <div id="rapport" class="card mb-4">
+                 <div class="card-body">
+                   <p>Ecrivez votre commentaire, et appuyez sur entrée pour le poster</p>
+       
+                   <div class="d-flex justify-content-between">
+                     <div class="d-flex flex-row align-items-center">
+                       <p class="small mb-0 ms-2">Martha</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+       
+               <div class="card mb-4">
+                 <div class="card-body">
+                   <p>Ecrivez votre commentaire, et appuyez sur entrée pour le poster</p>
+       
+                   <div class="d-flex justify-content-between">
+                     <div class="d-flex flex-row align-items-center">
+                       <p class="small mb-0 ms-2">Johny</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+       
+               <div class="card mb-4">
+                 <div class="card-body">
+                   <p>Ecrivez votre commentaire, et appuyez sur entrée pour le poster</p>
+       
+                   <div class="d-flex justify-content-between">
+                     <div class="d-flex flex-row align-items-center">
+                       <p class="small mb-0 ms-2">Mary Kate</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+       
+               <div class="card">
+                 <div class="card-body">
+                   <p>Ecrivez votre commentaire, et appuyez sur entrée pour le poster</p>
+       
+                   <div class="d-flex justify-content-between">
+                     <div class="d-flex flex-row align-items-center">
+                       <p class="small mb-0 ms-2">Johny</p>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+ </article>
