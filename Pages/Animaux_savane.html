@@ -9,38 +9,43 @@
     <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
 </form>
 <article class="background-secondary border-black ">
-<div class="container p-4">
-    <h2 class="text-center text-primary">Gigi la giraffe</h2>
-    <div class="row row-cols-2 align-items-center">
-        <div class="col">
-            <p class="text-justify"> Prénom: Gigi la giraffe</p>
-            <p class="text-justify"> Espèce: Giraffe</p>
-            <p class="text-justify"> Habitat: Savane</p>
-            <p class="text-justify"> Etat de santé: Bon</p>
-            <p class="text-justify"> Nourrriture: carotte (1kg), pommes (750g)</p>
-            <p class="text-justify"> Date de passage: jj/mm/aaaa</p>
-        </div>
-        <div class="col">
-            <img class="w-100 rounded" src="../images/giraffe.jpg" alt="Une giraffe"/>
+    <div class="container p-4">
+        <h2 class="text-center text-primary">Gigi la giraffe</h2>
+        <div class="row row-cols-2 align-items-center">
+
+            <!-- Bouton de modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <img src="../images/lion.jpg" alt="Un lion">
+                <p class="titre-image">Lion</p>
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
+            </button>
+            <!-- Bouton de modal -->
+            
+            <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                             ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+
         </div>
     </div>
-</div>
-</article>
-<article class="background-secondary border-black">
-<div class="container p-4">
-    <h2 class="text-center text-primary">Lili la lionne</h2>
-    <div class="row row-cols-2 align-items-center">
-        <div class="col">
-            <p class="text-justify"> Prénom: Lili la lionne</p>
-            <p class="text-justify"> Espèce: Lionne</p>
-            <p class="text-justify"> Habitat: Savane</p>
-            <p class="text-justify"> Etat de santé: Bon</p>
-            <p class="text-justify"> Nourrriture: viande (7kg)</p>
-            <p class="text-justify"> Date de passage: jj/mm/aaaa</p>
-        </div>
-        <div class="col">
-            <img class="w-100 rounded" src="../images/lionne.jpg" alt="Une lionne"/>
-        </div>
-    </div>
-</div>
 </article>
