@@ -14,45 +14,96 @@
     <div class="row row-cols-2 align-items-center">
         <div class="col">
             <button>
-                <img class="w-100 rounded" src="../images/éléphant.jpg" alt="Un éléphant"/>
+                <div class="col image-card text-white">
+                    <img class="w-100 rounded" src="../images/éléphant.jpg" alt="Un éléphant"/>
+                    <p class="titre-image">Titre</p>
+                    <div class="action-image-buttons">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                        <button type="button" class="btn btn-outline-light"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
+                    </div>
+                </div>
             </button>
         </div>
     </div>
 </div>
 </article>
-<article>
-    <div class="container p-4">
-        <h2 class="text-center text-primary">Qui sommes-nous ?</h2>
-        <div class="row row-cols-2 align-items-center">
 
-            <!-- Bouton de modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Launch demo modal
-            </button>
-            <!-- Bouton de modal -->
-            
-            <!-- Modal -->
-             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                             ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-
+<!-- Modal d'édition photo -->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition de la Photo</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="NamePhotoInput" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="NamePhotoInput" placeholder="Titre de l'image" name="Titre"> 
+                </div>
+                <div class="mb-3">
+                  <label for="ImageInput" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="ImageInput"  name="Image">
+                </div>
+                <div class="text-center modal-footer">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+      </div>
     </div>
-</article>
+  </div>
+
+  <!-- Modal de suppression de la photo -->
+<div class="modal fade" id="SuppressionPhotoModal" tabindex="-1" aria-labelledby="SuppressionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="SuppressionPhotoModalLabel">Êtes-vous sûr de vouloir supprimer la Photo ?</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <p>Titre</p>
+                  <img src="/images/éléphant.jpg" class="rounded w-100" alt="Un éléphant">
+                </div>
+                <div class="text-center modal-footer">
+                    <button type="button" class="btn btn-danger">Supprimer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal d'édition du texte -->
+<div class="modal fade" id="EditiontexteModal" tabindex="-1" aria-labelledby="EditiontexteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditiontexteModalLabel">Edition du texte</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="NametexteInput" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="NametexteInput" placeholder="Titre du texte" name="Titre"> 
+                </div>
+                <div class="mb-3">
+                  <label for="TexteInput" class="form-label">Texte</label>
+                  <input type="text" class="form-control" id="TexteInput"  name="Image">
+                </div>
+                <div class="text-center modal-footer">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
