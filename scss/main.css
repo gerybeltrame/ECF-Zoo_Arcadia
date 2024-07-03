@@ -12052,4 +12052,8 @@ p {
   justify-content: space-between;
   opacity: 0;
   transition: all 0.3s;
+}
+
+.animal-card {
+  border-color: black;
 }/*# sourceMappingURL=main.css.map */
