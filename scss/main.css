@@ -12005,7 +12005,7 @@ p {
   font-size: 18px;
 }
 
-.hero-scene-content {
+.hero-scene {
   background-image: url("../images/rhinocéros.jpg");
   background-size: cover;
   background-position: center;
@@ -12018,9 +12018,6 @@ p {
   flex-direction: column;
   color: white;
   margin-bottom: 15px;
-}
-
-.hero-scene-content p h1, .hero-scene-content p .h1 {
   font-size: 1.5rem;
   text-align: center;
 }
