@@ -6,8 +6,14 @@
 </div>
 
 <div class="text-center">
-  <button class="btn btn-primary" data-show="connected">Ajouter un article</button>
+  <div class="">
+    <button class="btn btn-primary" data-show="disconnected">Ajouter un article</button>
+  </div>
+  <div>
+    <button class="btn btn-primary bouton-article" data-show="disconnected">Retirer un article</button>
+  </div class="">
 </div>
+
 <article>
    <div class="container p-4">
        <h2 class="text-center text-primary">Qui sommes-nous ?</h2>
@@ -17,15 +23,15 @@
                   Arcadia est un zoo situé en France près de la forêt de Brocéliande, en bretagne depuis 1960. 
                </p>
                <div class="action-text-buttons">
-                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
                </div>
            </div>
            <div class="col image-card text-white">
                <img class="w-100 rounded" src="../images/éléphant.jpg" alt="Un éléphant"/>
                <p class="titre-image">Titre</p>
                <div class="action-image-buttons">
-                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light" data-show="disconnected"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
                </div>
            </div>
        </div>
@@ -40,8 +46,8 @@
                <img class="w-100 rounded" src="../images/zèbre.jpg" alt="Des zèbres"/>
                <p class="titre-image">Titre</p>
                <div class="action-image-buttons">
-                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-                  <button type="button" class="btn btn-outline-light"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-light" data-show="disconnected"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
                </div>
            </div>
            <div class="col">
@@ -49,7 +55,7 @@
                   Nous possèdons tout un panel d'animaux, réparti par habitat savane, jungle et les marais, tel que: des lions, des zèbres, des singes et d’autres qui vous attendent !
                </p>
                <div class="action-text-buttons">
-                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
                </div>
            </div>
        </div>
@@ -68,15 +74,15 @@
                   Arcadia propose beaucoup d'activitées telles que des restaurants, des visites guidées ainsi que notre célèbre tour du zoo en train !
                </p>
                <div class="action-text-buttons">
-                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal"><i class="bi bi-pencil-square"></i></button>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
                </div>
            </div>
            <div class="col image-card text-white">
                <img class="w-100 rounded" src="../images/locomotive.jpg" alt="Une locomotive à vapeur"/>
                <p class="titre-image">Titre</p>
                <div class="action-image-buttons">
-                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-outline-light"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
+                <button type="button" class="btn btn-outline-light" data-show="disconnected"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
                </div>
            </div>
        </div>
@@ -111,6 +117,10 @@
                       <p class="small mb-0 ms-2">Martha</p>
                     </div>
                   </div>
+                  <div class="text-center" data-show="">
+                    <button type="submit" class="btn btn-primary" data-show="disconnected">Accepter</button>
+                    <button type="submit" class="btn btn-danger" data-bs-dismiss="modal" data-show="disconnected">Refuser</button>
+                  </div>
                 </div>
               </div>
       
@@ -122,6 +132,10 @@
                     <div class="d-flex flex-row align-items-center">
                       <p class="small mb-0 ms-2">Johny</p>
                     </div>
+                  </div>
+                  <div class="text-center" data-show="">
+                    <button type="submit" class="btn btn-primary" data-show="disconnected">Accepter</button>
+                    <button type="submit" class="btn btn-danger" data-bs-dismiss="modal" data-show="disconnected">Refuser</button>
                   </div>
                 </div>
               </div>
@@ -135,6 +149,10 @@
                       <p class="small mb-0 ms-2">Mary Kate</p>
                     </div>
                   </div>
+                  <div class="text-center" data-show="">
+                    <button type="submit" class="btn btn-primary" data-show="disconnected">Accepter</button>
+                    <button type="submit" class="btn btn-danger" data-bs-dismiss="modal" data-show="disconnected">Refuser</button>
+                  </div>
                 </div>
               </div>
       
@@ -146,6 +164,10 @@
                     <div class="d-flex flex-row align-items-center">
                       <p class="small mb-0 ms-2">Johny</p>
                     </div>
+                  </div>
+                  <div class="text-center" data-show="">
+                    <button type="submit" class="btn btn-primary" data-show="disconnected">Accepter</button>
+                    <button type="submit" class="btn btn-danger" data-bs-dismiss="modal" data-show="disconnected">Refuser</button>
                   </div>
                 </div>
               </div>

@@ -12,6 +12,9 @@
 <div class="text-center">
     <button class="btn btn-primary" data-show="connected">Ajouter un animal</button>
 </div>
+<div class="text-center">
+  <button class="btn btn-primary bouton-article" data-show="connected">Retirer un animal</button>
+</div>
 
 <article class="background-secondary animal-card">
     <div class="container p-4">
@@ -21,8 +24,8 @@
                 <img class="w-100 rounded" src="../images/giraffe.jpg" alt="Une giraffe"/>
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
-                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="connected"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-show="connected"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
                 </div>
             </div>
             <div class="col">
@@ -30,11 +33,15 @@
                 <p>Race: Giraffe</p>
                 <p>Habitat: Savane</p>
                 <p>Etat de santé: Bon</p>
-                <p>Nourriture:</p>
-                <p>Rapport du vétérinaire:</p>
+                <p>Nourriture du / / :</p>
+                <p>Rapport du vétérinaire du / / :</p>
+                <p>Avis sur l'habitat du / / :</p>
 
-                <div class="action-text-buttons">
-                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal"><i class="bi bi-pencil-square"></i></button>
+                <div class="action-fiche-buttons">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditionFicheModal" data-show="connected"><i class="bi bi-pencil-square"></i></button>
+                </div>
+                <div class="action-rapport-buttons">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditionrapportModal" data-show="connected"><i class="bi bi-pencil-square"></i></button>
                 </div>
             </div>
         </div>
@@ -49,8 +56,8 @@
                 <img class="w-100 rounded" src="../images/jungle.jpg" alt="Une giraffe"/>
                 <p class="titre-image">Titre</p>
                 <div class="action-image-buttons">
-                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-outline-light"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="connected"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-show="connected"><i class="bi bi-trash" data-bs-toggle="modal" data-bs-target="#SuppressionPhotoModal"></i></button>
                 </div>
             </div>
             <div class="col">
@@ -58,11 +65,15 @@
                 <p>Race: Giraffe</p>
                 <p>Habitat: Savane</p>
                 <p>Etat de santé: Bon</p>
-                <p>Nourriture:</p>
-                <p>Rapport du vétérinaire:</p>
+                <p>Nourriture du / / :</p>
+                <p>Rapport du vétérinaire du / / :</p>
+                <p>Avis sur l'habitat du / / :</p>
 
-                <div class="action-text-buttons">
-                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditiontexteModal"><i class="bi bi-pencil-square"></i></button>
+                <div class="action-fiche-buttons">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditionFicheModal" data-show="connected"><i class="bi bi-pencil-square"></i></button>
+                </div>
+                <div class="action-rapport-buttons">
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditionrapportModal" data-show="connected"><i class="bi bi-pencil-square"></i></button>
                 </div>
             </div>
         </div>
@@ -148,3 +159,73 @@
       </div>
     </div>
   </div>
+  <!-- Modal d'édition de la fiche de l'animal -->
+<div class="modal fade" id="EditionFicheModal" tabindex="-1" aria-labelledby="EditionFicheModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionFicheModalLabel">Edition du texte</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                <label for="NameAnimalInput" class="form-label">Nom de l'animal</label>
+                <input type="text" class="form-control" id="NameAnimalInput" placeholder="Nom de l'animal" name="Nom de l'animal"> 
+              </div>
+              <div class="mb-3">
+                <label for="RaceInput" class="form-label">Race de l'animal</label>
+                <input type="text" class="form-control" id="RaceInput"  name="race de l'animal">
+              </div>
+              <div class="mb-3">
+                <label for="HabitatInput" class="form-label">Habitat de l'animal</label>
+                <input type="text" class="form-control" id="HabitatInput"  name="habitat de l'animal">
+              </div>
+              <div class="mb-3">
+                <label for="EtatInput" class="form-label">Etat de l'animal</label>
+                <input type="text" class="form-control" id="EtatInput"  name="Etat de l'animal">
+              </div>
+              <div class="mb-3">
+                <label for="NourritureInput" class="form-label">Nourriture</label>
+                <input type="text" class="form-control" id="NourritureInput"  name="Nourriture de l'animal">
+              </div>
+              <div class="text-center modal-footer">
+                  <button type="button" class="btn btn-primary">Enregistrer</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Modal d'édition du rapport et de l'avis du vétérinaire -->
+<div class="modal fade" id="EditionrapportModal" tabindex="-1" aria-labelledby="EditionrapportModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionrapportModalLabel">Edition du texte</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                <label for="DaterapportInput" class="form-label">Titre</label>
+                <input type="text" class="form-control" id="DaterapportInput" placeholder="Date du rapport" name="Date"> 
+              </div>
+              <div class="mb-3">
+                <label for="TexteInput" class="form-label">Texte</label>
+                <input type="text" class="form-control" id="TexteInput"  name="rapport">
+              </div>
+              <div class="mb-3">
+                <label for="AvisInput" class="form-label">Avis sur l'habitat</label>
+                <input type="text" class="form-control" id="AvisInput"  name="Avis sur l'habitat">
+              </div>
+              <div class="text-center modal-footer">
+                  <button type="button" class="btn btn-primary">Enregistrer</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
