@@ -68,6 +68,7 @@
           <div id="email" class="col-6 col-lg-4">
               <p>contact@zooarcadia.com</p>
           </div>
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#EditionFooterModal" data-show="disconnected"><i class="bi bi-pencil-square"></i></button>
       </div>
   </footer>
 
@@ -76,4 +77,40 @@
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
+<!-- Modal d'édition du footer -->
+<div class="modal fade" id="EditionFooterModal" tabindex="-1" aria-labelledby="EditionFooterModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionFooterModalLabel">Edition du Footer</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                <label for="NameFooterInput" class="form-label">Titre</label>
+                <input type="text" class="form-control" id="NameFooterInput" placeholder="Titre du footer" name="Titre"> 
+              </div>
+              <div class="mb-3">
+                <label for="HoraireInput" class="form-label">Horaire</label>
+                <input type="text" class="form-control" id="HoraireInput"  name="Horaire">
+              </div>
+              <div class="mb-3">
+                <label for="adresseInput" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="adresseInput"  name="adresse">
+              </div>
+              <div class="mb-3">
+                <label for="EmailInput" class="form-label">Email</label>
+                <input type="text" class="form-control" id="EmailInput"  name="Email">
+              </div>
+              <div class="text-center modal-footer">
+                  <button type="button" class="btn btn-primary">Enregistrer</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
 </html>
