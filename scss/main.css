@@ -11977,6 +11977,7 @@ main {
 
 #connexion {
   padding: 90px;
+  margin-bottom: 150px;
 }
 
 #tableau {
@@ -12067,6 +12068,11 @@ p {
 }
 
 #marais {
+  margin-bottom: 150px;
+  padding: 70px;
+}
+
+#contact {
   margin-bottom: 150px;
   padding: 70px;
 }/*# sourceMappingURL=main.css.map */

@@ -16,7 +16,7 @@ function checkCredentials(){
         setCookie(RoleCookieName, "admin", 7);
 
         //Rediriger vers la page admin
-        window.location.replace("Page_admin");
+        window.location.replace("Pageadministration");
     }
     else{
         mailInput.classList.add("is-invalid");
