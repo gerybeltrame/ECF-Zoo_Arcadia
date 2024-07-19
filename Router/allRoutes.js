@@ -8,9 +8,9 @@ export const allRoutes = [
     new Route("/Contacts", "Contacts", "/Pages/Contacts.html", []),
     new Route("/Connexion", "Connexion", "/Pages/Connexion.html", ["disconnected"],"/js/auth/signin.js"),
     new Route("/Page_admin", "Pageadministration", "/Pages/Page_admin.html", ["admin"], "/js/auth/signup.js"),
-    new Route("/Animaux_savane", "Animauxsavane", "/Pages/Animaux_savane.html", []),
-    new Route("/Animaux_jungle", "Animauxjungle", "/Pages/Animaux_jungle.html", []),
-    new Route("/Animaux_marais", "Animauxmarais", "/Pages/Animaux_marais.html", []),
+    new Route("/Animaux_savane", "Animauxsavane", "/Pages/Animauxsavane.html", []),
+    new Route("/Animaux_jungle", "Animauxjungle", "/Pages/Animauxjungle.html", []),
+    new Route("/Animaux_marais", "Animauxmarais", "/Pages/Animauxmarais.html", []),
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
